@@ -8,7 +8,17 @@ app.config["DEBUG"] = True
 #flash  the secret key to secure sessions
 app.config['SECRET_KEY'] = 'your secret key'
 
+#Function to open a connection to the database.db file
+def get_db_connection():
+    #get a database connection
+    conn = sqlite3.connect('database.db')
 
+    #allows us to have name based access to columns
+    #the db connection will return rows we can access like python dictionaries
+    conn.row_factory = sqlite3.Row
+
+    #return the connection object
+    return conn
 
 
 # use the app.route() decorator to create a Flask view function called index()
