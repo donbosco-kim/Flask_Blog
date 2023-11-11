@@ -2,7 +2,8 @@
 
 This application have CRUD features implemented and user data are stored in sqlite3 database.
 
-## Connecting a remote repository to github
+## Connecting a remote repository to github 
+### These instructions are just for my reference
 - create a new repo in github
 - copy the https url
 - type git init command in terminal
