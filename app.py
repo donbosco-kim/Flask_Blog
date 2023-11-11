@@ -16,20 +16,20 @@ app.config['SECRET_KEY'] = 'your secret key'
 def index():
     
     
-    return "<h1>Index Page<\h1>"
+    return "<h1>Index Page</h1>"
 
 @app.route('/create/', methods=('GET', 'POST'))
 def create():
     
 
-    return "<h1>Create a Post Page<\h1>"
+    return "<h1>Create a Post Page</h1>"
 
 #route to edit post
 @app.route('/<int:id>/edit/', methods=('GET', 'POST'))
 def edit(id):
 
 
-    return "<h1>Edit a Post Page<\h1>"
+    return "<h1>Edit a Post Page</h1>"
 
 # route to delete a post
 @app.route('/<int:id>/delete/', methods=('POST',))
